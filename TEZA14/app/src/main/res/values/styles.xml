@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    &lt;!&ndash; Custom Dialog Theme Start &ndash;&gt;-->
+<!--    <style name="DialogDark" parent="Theme.AppCompat.Dialog.Alert" />-->
+<!--    &lt;!&ndash; Custom Dialog Theme End &ndash;&gt;-->
+
+    <!--    To change search bar theme-->
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <!--This line changes the color of text in Toolbar-->
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="submitBackground">@color/colorTransparent</item>
+        <!-- Gets rid of the search icon -->
+        <item name="searchIcon">@drawable/ic_search_black_24dp</item>
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@null</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="android:queryHint">@string/search_member_by_name</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!--    To change search bar theme-->
+
+
+    <style name="DialogDark" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <!--        <item name="android:windowFrame">@null</item>-->
+        <!--        <item name="android:windowNoTitle">true</item>-->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowCloseOnTouchOutside">true</item>-->
+        <!--        <item name="android:windowBackground">@color/colorCompletelyTransparent</item>-->
+    </style>
+
+    <style name="CustomTransparentTheme" parent="AppTheme">
+
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+    </style>
+
+    <style name="CustomBlackTransparentTheme" parent="AppTheme">
+
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/colorBlackTransparent</item>
+    </style>
+
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+    </style>
+</resources>

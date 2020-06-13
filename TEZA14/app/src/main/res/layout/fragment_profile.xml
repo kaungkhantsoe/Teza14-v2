@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="50dp"
+                android:layout_margin="@dimen/margin_normal"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.kks.teza14.custom_control.MyanTextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_person"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <com.kks.teza14.custom_control.MyanTextView
+                    android:text="@string/my_profile"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_pending"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:padding="@dimen/margin_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_pending_user"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <com.kks.teza14.custom_control.MyanTextView
+                        android:text="@string/pending_users"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_count"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    app:cardCornerRadius="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                    <com.kks.teza14.custom_control.MyanBoldTextView
+                        android:id="@+id/btv_count"
+                        android:text="1"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_normal"
+                        android:background="@color/colorRed"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_about"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_help"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <com.kks.teza14.custom_control.MyanTextView
+                    android:text="@string/about"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_logout"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_logout"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <com.kks.teza14.custom_control.MyanTextView
+                    android:text="@string/logout"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

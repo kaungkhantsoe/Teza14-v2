@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_care"
+            android:src="@drawable/teza_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ll_login"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_care"
+            app:layout_constraintBottom_toTopOf="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kks.teza14.custom_control.MyanTextView
+                android:visibility="gone"
+                android:textColor="@color/colorTextPrimary"
+                android:text="@string/get_started_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.kks.teza14.custom_control.MyanTextView
+                android:visibility="gone"
+                android:textColor="@color/colorTextSecondary"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/you_can_login_with_your_facebook_account_or_google_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_fb_login"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/margin_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_fb"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kks.teza14.custom_control.MyanTextView
+                            android:text="@string/connect_with_facebook"
+                            android:textColor="@color/colorTextPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <com.kks.teza14.custom_control.MyanTextView
+                            android:text="@string/start_with_facebook_login"
+                            android:textColor="@color/colorTextSecondary"
+                            android:textSize="@dimen/text_size_small"
+                            android:layout_marginTop="@dimen/margin_xsmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/fb_login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_google_login"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/margin_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_gmail"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kks.teza14.custom_control.MyanTextView
+                            android:text="@string/connect_with_google"
+                            android:textColor="@color/colorTextPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <com.kks.teza14.custom_control.MyanTextView
+                            android:text="@string/start_with_google_login"
+                            android:textColor="@color/colorTextSecondary"
+                            android:textSize="@dimen/text_size_small"
+                            android:layout_marginTop="@dimen/margin_xsmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/google_login_button"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_marginRight="@dimen/margin_large"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal">
+
+                <CheckBox
+                    android:id="@+id/cb_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_accept_the" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_xsmall"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/coloLightBlue" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.kks.teza14.custom_control.MyanTextView
+                android:text="@string/developed_by_yammobots_co_ltd"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.kks.teza14.custom_control.MyanTextView
+                android:text="@string/copyright_2020"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

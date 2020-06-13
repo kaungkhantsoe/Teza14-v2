@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TEZA 14</string>
+
+    <string name="facebook_app_id">2708012732751364</string>
+    <string name="fb_login_protocol_scheme">fb2708012732751364</string>
+
+    <string name="i_accept_the">I accept the</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="terms_and_condition_required">Terms and Conditions required</string>
+    <string name="developed_by_yammobots_co_ltd">developed by Kaung Khant Soe</string>
+    <string name="copyright_2020">copyright @ 2020</string>
+    <string name="linking_account">You have previous account logged in with</string>
+    <string name="please_login_with"> . Please Login with the same Gmail to link data.</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version is available. Please update to version</string>
+    <string name="update">Update</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="kids_name">Kids Name</string>
+    <string name="address">Address</string>
+    <string name="job">Job</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="note">Note</string>
+    <string name="member_detail">Detail</string>
+    <string name="edit_member">Edit Member</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="add">Add</string>
+    <string name="search_member_by_name">Search member by name</string>
+    <string name="get_started_here">Get started here</string>
+    <string name="start_with_facebook_login">Start with Facebook login</string>
+    <string name="connect_with_facebook">Connect with Facebook</string>
+    <string name="connect_with_google">Connect with Google</string>
+    <string name="start_with_google_login">Start with Google login</string>
+    <string name="you_can_login_with_your_facebook_account_or_google_account">You can login with your facebook account or Google account</string>
+    <string name="pending_users">Pending Users</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="my_profile">My Profile</string>
+    <string name="posted">Posted</string>
+    <string name="title_cannot_be_empty">Title cannot be empty</string>
+    <string name="body_cannot_be_empty">Body cannot be empty</string>
+
+
+</resources>

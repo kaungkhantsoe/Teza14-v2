@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381058854195",
+    "firebase_url": "https://teza14-cb81d.firebaseio.com",
+    "project_id": "teza14-cb81d",
+    "storage_bucket": "teza14-cb81d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381058854195:android:7c35790690627aa525e246",
+        "android_client_info": {
+          "package_name": "com.kks.teza14"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381058854195-a3bge50cn5h9iqhm50q4ead5ifli47sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJyobxNaE_X0xFx6P7Z9hbOI8isWSegJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381058854195-a3bge50cn5h9iqhm50q4ead5ifli47sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
